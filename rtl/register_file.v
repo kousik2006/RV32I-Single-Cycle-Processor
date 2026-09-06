@@ -19,7 +19,7 @@ module register_file(
 
     // write operation
     always @(posedge clk) begin
-        if(reg_write && (rd != 4'd0))
+        if(reg_write && (rd != 4'd0)) // as 1st register kokhono write hobe na.. 
             begin
                 registers[rd] <= write_data;
             end
