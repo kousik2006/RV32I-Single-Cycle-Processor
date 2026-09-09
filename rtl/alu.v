@@ -26,7 +26,7 @@ always @(*) begin
         default : result = 32'd0;
     endcase    
     
-    assign zero = (result==32'd0) ? 1'b1 : 1'b0;
 end
+    assign zero = (result==32'd0) ? 1'b1 : 1'b0;
 
 endmodule
