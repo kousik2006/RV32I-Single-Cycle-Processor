@@ -27,7 +27,7 @@ module immediate_generator(
                     instruction[7],
                     instruction[30:25],
                     instruction[11:8],
-                    1'b0};
+                    1'b0}; // as instruction adress cannot be odd, so last bit is forced to zero.. 
 
 
     // U-type immediate
