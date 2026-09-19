@@ -3,10 +3,10 @@
 module alu_src_mux_a(
     input [31:0]rs1,
     input [31:0]pc,
-    input ALUSrcB,
+    input ALUSrcA,
     output [31:0]alu_a
 );
-    assign alu_a = ALUSrcB ? rs1 : pc;
+    assign alu_a = ALUSrcA ? rs1 : pc;
 
 endmodule
 
