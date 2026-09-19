@@ -3,7 +3,7 @@ module writeback_mux(
     input [31:0] memory_data, // data coming from memory for load.. 
     input [31:0] pc_plus_4, // next instruction store hobe for jal or jalr
     input [1:0] ResultSrc, // select line
-    output [31:0] write_data // je data ta write hobe register file e.. 
+    output reg [31:0] write_data // je data ta write hobe register file e.. 
 );
 
     always @(*) begin
